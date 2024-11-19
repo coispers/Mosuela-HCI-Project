@@ -1,0 +1,45 @@
+*{
+  font-family:"Quicksand", 'Courier New', Courier, monospace 
+}
+.h-font{
+  font-family:"Montserrat", 'Courier New', Courier, monospace;
+}
+.swiper-container { 
+  width: 100%; height: 400px; /* Adjust the height as needed */
+ } 
+
+.swiper-slide img { 
+  width: 100%; height: 100%; object-fit: cover; /* Ensures images cover the container without distortion */ 
+}
+.custom-bg{
+  background-color: #2ec1ac;
+}
+.custom-bg:hover{
+  background-color: #279e8c;
+}
+.appointment-form{
+  margin-top: -50px;
+  z-index: 2;
+  position: relative;
+}
+.card { 
+  height: 100%;
+ }
+.card img {
+   height: 200px;  
+   object-fit: cover; 
+} 
+.card-body { 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
+height: 100%;
+ } 
+ .features { 
+  flex-grow: 1;}
+@media screen {
+  .appointment-form{
+    margin-top: 25px;
+    padding: 0 35px;
+  }
+}
