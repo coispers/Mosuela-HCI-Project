@@ -17,11 +17,6 @@
 .custom-bg:hover{
   background-color: #279e8c;
 }
-.appointment-form{
-  margin-top: -50px;
-  z-index: 2;
-  position: relative;
-}
 .card { 
   height: 100%;
  }
