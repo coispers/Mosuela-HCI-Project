@@ -1,3 +1,4 @@
+//header
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 30,
   effect: "fade",
@@ -7,7 +8,7 @@ var swiper = new Swiper(".swiper-container", {
     disableOnInteraction: false,
   }
 });
-
+//reviews
 var swiper = new Swiper(".swiper-reviews", {
   effect: "coverflow",
   grabCursor: true,
@@ -39,4 +40,13 @@ var swiper = new Swiper(".swiper-reviews", {
       slidesPerView:3,
     },
   }
+});
+//our founders
+var swiper = new Swiper(".swiper-team", {
+  slidesPerView:3,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
 });
