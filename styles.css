@@ -7,6 +7,8 @@
 .swiper-container { 
   width: 100%; height: 400px;
  } 
+ .text-light { color: #f8f9fa !important;
+ }
 
 .swiper-slide img { 
   width: 100%; height: 100%; object-fit: cover;
@@ -30,8 +32,6 @@ flex-direction: column;
 justify-content: space-between; 
 height: 100%;
  } 
- .features { 
-  flex-grow: 1;}
 @media screen {
   .appointment-form{
     margin-top: 25px;
@@ -46,6 +46,38 @@ height: 100%;
   transform: scale(1.03);
   transition: all 0.3s;
 }
+.text-pop {
+  position: relative;
+  display: inline-block;
+  color: #f8f9fa; /* Adjust text color if needed */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.text-pop:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.text-pop::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50%; /* Start from the center */
+  width: 0; 
+  height: 2px;
+  background-color: #f8f9fa;
+  transition: all 0.4s ease;
+  transform: translateX(-50%); /* Center the starting point */
+}
+
+.text-pop:hover::after {
+  width: 100%; /* Expand to full width */
+  left: 0; /* Reset left to 0 */
+  transform: translateX(0); /* Remove translation effect */
+}
+
+
 .h-line{
   width: 100%;
   margin: 0;

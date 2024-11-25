@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website-Home</title>
+  <title>HRR-Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -113,6 +113,50 @@
       </div>
      </div>
 
+         <!-- Inquire Modal -->
+  <div class="modal fade" id="inquireModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center">
+              <i class="bi bi-person-fill-add fs-3 me-2"></i></i>Inquire Here!</h5>
+            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+            <span class="badge rounded-pill text-bg-light text-dark mb-3 text-wrap lh-base">Note: Your details must match your present ID</span>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 ps-0 mb-3">
+                  <label  class="form-label">Last Name</label>
+                  <input type="text" class="form-control shadow-none" >
+                </div>
+
+                <div class="col-md-6 ps-0 mb-3">
+                  <label  class="form-label">First Name</label>
+                  <input type="text" class="form-control shadow-none" >
+                </div>
+
+                <div class="col-md-6 ps-0 mb-3">
+                  <label  class="form-label">Phone Number</label>
+                  <input type="number" class="form-control shadow-none" >
+                </div>
+
+                <div class="col-md-6 ps-0 mb-3">
+                  <label  class="form-label">Valid ID: (Passport, National ID, etc.)</label>
+                  <input type="file" class="form-control shadow-none" >
+                </div>
+
+              </div>
+              <div class="text-center my-1">
+                <button type="submit" class="btn btn-dark shadow-none">Inquire</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
      <!-- Featured Listings -->
       <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Featured Listings</h2>
 
@@ -142,8 +186,14 @@
                     Garage For Up to 4 Cars
                   </span>
                 </div>
+                <div class="text-center">
+                  <i class="bi bi-house-check-fill"></i> -Available-
+                </div>
+                <br>
                 <div class="d-flex justify-content-evenly mb-2">
-                  <a href="#" class="btn btn-primary custom-bg col-lg-5">Inquire Here!</a>
+                  <button type="button" class="btn btn-primary custom-bg col-lg-5" data-bs-toggle="modal" data-bs-target="#inquireModal">
+                    Inquire Here!
+                  </button>
                   <a href="listings.html" class="btn btn-primary text-bg-dark col-lg-5">More Details.</a>
                 </div>
               </div> 
@@ -179,8 +229,14 @@
                     3 Walk-in Closets
                   </span>
                 </div>
+                <div class="text-center">
+                  <i class="bi bi-house-check-fill"></i> -Available-
+                </div>
+                <br>
                 <div class="d-flex justify-content-evenly mb-2">
-                  <a href="#" class="btn btn-primary custom-bg col-lg-5">Inquire Here!</a>
+                  <button type="button" class="btn btn-primary custom-bg col-lg-5" data-bs-toggle="modal" data-bs-target="#inquireModal">
+                    Inquire Here!
+                  </button>
                   <a href="listings.html" class="btn btn-primary text-bg-dark col-lg-5">More Details.</a>
                 </div>
 
@@ -212,8 +268,15 @@
                     Garage For Up to 4 Cars
                   </span>
                 </div>
+                
+                <div class="text-center">
+                  <i class="bi bi-house-check-fill"></i> -Available-
+                </div>
+                <br>
                 <div class="d-flex justify-content-evenly mb-2">
-                  <a href="#" class="btn btn-primary custom-bg col-lg-5">Inquire Here!</a>
+                  <button type="button" class="btn btn-primary custom-bg col-lg-5" data-bs-toggle="modal" data-bs-target="#inquireModal">
+                    Inquire Here!
+                  </button>
                   <a href="listings.html" class="btn btn-primary text-bg-dark col-lg-5">More Details.</a>
                 </div>
               </div> 
@@ -276,24 +339,28 @@
           <div class="col-lg-4 col-md-4 p-4 bg-light rounded">
             <div class="bg-white p-3 rounded shadow-sm">
               <h5>Call Us</h5>
-              <a href="+639668107948" class="d-inline-block text-decoration-none mb-2 text-dark"><i class="bi bi-telephone-fill">
-              </i> +639 810 7948</a><br>
-              <a href="+639 123 4567" class="d-inline-block text-decoration-none text-dark"><i class="bi bi-telephone-fill">
-              </i> +639 123 4567</a>
+              <a href="+639668107948" class="d-inline-block text-decoration-none mb-2 text-dark">
+                <span class="badge bg-info text-dark fs-6 p-2">
+                  <i class="bi bi-telephone-fill">
+                  </i> +639 810 7948</a><br>
+                </span>
+              <a href="+639 123 4567" class="d-inline-block text-decoration-none text-dark">
+                <span class="badge bg-info text-dark fs-6 p-2"><i class="bi bi-telephone-fill">
+                </i> +639 123 4567</a></span>
             </div>
             <br>
             <div class="bg-white p-3 rounded shadow-sm">
               <h5>Follow Us</h5>
               <a href="" class="d-inline-block text-decoration-none mb-2 text-dark">
-                <span class="badge bg-light text-dark fs-6 p-2">
+                <span class="badge bg-info text-dark fs-6 p-2">
                   <i class="bi bi-facebook"></i> Facebook
               </span></a><br>
               <a href="" class="d-inline-block text-decoration-none mb-2 text-dark">
-                <span class="badge bg-light text-dark fs-6 p-2">
+                <span class="badge bg-info text-dark fs-6 p-2">
                   <i class="bi bi-twitter"></i> X/Twitter
               </span></a><br>
               <a href="" class="d-inline-block text-decoration-none mb-2 text-dark">
-                <span class="badge bg-light text-dark fs-6 p-2">
+                <span class="badge bg-info text-dark fs-6 p-2">
                   <i class="bi bi-instagram"></i> Instagram
               </span></a><br>
               
