@@ -74,7 +74,7 @@
               <div class="card-body">
                 <h5 class="card-title">₱200,000,000 - Available</h5>
                 <p class="card-text">For House Viewing</p>
-                <a href="#" class="btn btn-primary w-100 custom-bg col-lg-6 mb-2">Book Now!</a>
+                <button class="btn btn-primary w-100 custom-bg col-lg-6 mb-2 bookAppointment">Book Now!</button>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
               <div class="card-body">
                 <h5 class="card-title">₱200,000,000 - Available</h5>
                 <p class="card-text">For House Viewing</p>
-                <a href="#" class="btn btn-primary w-100 custom-bg col-lg-6 mb-2">Book Now!</a>
+                <button class="btn btn-primary w-100 custom-bg col-lg-6 mb-2 bookAppointment">Book Now!</button>
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@
               <div class="card-body">
                 <h5 class="card-title">₱200,000,000 - Available</h5>
                 <p class="card-text">For House Viewing</p>
-                <a href="#" class="btn btn-primary w-100 custom-bg col-lg-6 mb-2">Book Now!</a>
+                <button class="btn btn-primary w-100 custom-bg col-lg-6 mb-2 bookAppointment">Book Now!</button>
               </div>
             </div>
           </div>
@@ -214,6 +214,18 @@
 
       <!-- Footer -->
       <div id="footer-placeholder"></div>
+      <script>
+        // appointment booked notification
+      const bookButtons = document.getElementsByClassName("bookAppointment");
+      for (let i = 0; i < bookButtons.length; i++) {
+        bookButtons[i].addEventListener("click", function () {
+          if (confirm("Book an appointment now?")) {
+            location.reload(); // Reload the page
+          }
+        });
+}
+
+      </script>
    
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

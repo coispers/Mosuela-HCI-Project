@@ -26,38 +26,31 @@
       <div class="col-lg-6 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4">
           <iframe class="w-100 rounded mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247121.00096643483!2d120.77860583281249!3d14.583933500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c96fea20247f%3A0x1170bac2ec08cd79!2sPhilippines%E2%80%99%20Finest%20Homes%20for%20You!5e0!3m2!1sen!2sph!4v1732009173576!5m2!1sen!2sph"
-          height="320px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <h5>
-            Address
-          </h5>
-            <a href="https://maps.app.goo.gl/4Mv32eGnvybmk7gG7" class="text-decoration-none d-block" target="_blank">
-              <i class="bi bi-pin-map-fill"></i> ABC, XYZ, Batangas City, Philippines
-            </a>
-            <h5 class="mt-4">Call Us</h5>
-            <a href="+639668107948" class="d-inline-block text-decoration-none mb-2 text-dark"><i class="bi bi-telephone-fill">
-            </i> +639 810 7948</a><br>
-            <a href="+639 123 4567" class="d-inline-block text-decoration-none text-dark"><i class="bi bi-telephone-fill">
-            </i> +639 123 4567</a>
-            <h5 class="mt-4 d-block">
-              Email
-            </h5>
-            <a href="mailto: highrollerrealty@gmail.com" class="text-decoration-none d-block"><i class="bi bi-envelope-fill"></i> highrollerrealty@gmail.com</a>
-
-            <h5 class="mt-4">Follow Us</h5>
-              <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
-                  <i class="bi bi-facebook"></i></a>
-              <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
-                  <i class="bi bi-twitter"></i></a>
-              <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
-                  <i class="bi bi-instagram"></i></a>
+            height="320px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h5>Address</h5>
+          <a href="https://maps.app.goo.gl/4Mv32eGnvybmk7gG7" class="text-decoration-none d-block" target="_blank">
+            <i class="bi bi-pin-map-fill"></i> ABC, XYZ, Batangas City, Philippines
+          </a>
+          <h5 class="mt-4">Call Us</h5>
+          <a href="+639668107948" class="d-inline-block text-decoration-none mb-2 text-dark"><i class="bi bi-telephone-fill">
+          </i> +639 810 7948</a><br>
+          <a href="+639 123 4567" class="d-inline-block text-decoration-none text-dark"><i class="bi bi-telephone-fill">
+          </i> +639 123 4567</a>
+          <h5 class="mt-4 d-block">Email</h5>
+          <a href="mailto: highrollerrealty@gmail.com" class="text-decoration-none d-block"><i class="bi bi-envelope-fill"></i> highrollerrealty@gmail.com</a>
+          <h5 class="mt-4">Follow Us</h5>
+          <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
+            <i class="bi bi-facebook"></i></a>
+          <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
+            <i class="bi bi-twitter"></i></a>
+          <a href="" class="d-inline-block text-decoration-none mb-2 text-dark me-2">
+            <i class="bi bi-instagram"></i></a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 px-4">
         <div class="bg-white rounded shadow p-4">
-          <form action="" style="font-weight: 500;">
-            <h5>
-              Send Us A Message
-            </h5>
+          <form action="" style="font-weight: 500;" id="contactForm">
+            <h5>Send Us A Message</h5>
             <div class="mb-3">
               <label class="form-label mt-3">Name</label>
               <input type="text" class="form-control shadow-none">
@@ -74,13 +67,15 @@
               <label class="form-label mt-3">Message</label>
               <textarea class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
             </div>
-            <button type="submit" class="btn text-white custom-bg mt-3">Send</button>
+            <button type="button" id="sendButton" class="btn text-white custom-bg mt-3">Send</button>
           </form>
         </div>
-
       </div>
     </div>
   </div>
+  
+
+  
 
 
   
@@ -93,7 +88,14 @@
    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    <!-- swiper js -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   
+
+   <script>
+    // sent notification
+    document.getElementById("sendButton").addEventListener("click", function() {
+      alert("Message Sent");
+      location.reload();
+    });
+  </script>
 <script src="carousel.js"></script>
 <script src="inc.js"></script>
 </body>
